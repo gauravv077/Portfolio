@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CSS ANIMATIONS*/
+@keyframes floating {
+    0% {
+        transform: translate(0px, -60px);
+        opacity: 0;
+        filter: blur(1px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0, 0px);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

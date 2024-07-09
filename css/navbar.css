@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Trebuchet MS';
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 70px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #800080;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #E7EDF7;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
